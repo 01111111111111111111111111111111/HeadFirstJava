@@ -1,3 +1,5 @@
+package GuessGame;
+
 /**
  * Created by mwz16 on 10/10/2017.
  */

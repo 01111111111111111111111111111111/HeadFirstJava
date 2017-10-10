@@ -1,16 +1,16 @@
-/*
+package GuessGame;/*
 Michael
 Created 10/10/2017
-GuessGame involves use of Object-oriented programming--objects to objects
+GuessGame.GuessGame involves use of Object-oriented programming--objects to objects
 Rand number gen betw 0 to 9 where 3 players attempt to guess number
 */
 
-public class GuessGame { // GuessGame with three objects/instances for three Players
+public class GuessGame { // GuessGame.GuessGame with three objects/instances for three Players
     Player p1;
     Player p2;
     Player p3;
 
-    public void startGame() { //three Player objects and assigned to three Player instance variables
+    public void startGame() { //three GuessGame.Player objects and assigned to three GuessGame.Player instance variables
         p1 = new Player();
         p2 = new Player();
         p3 = new Player();
@@ -37,13 +37,13 @@ public class GuessGame { // GuessGame with three objects/instances for three Pla
             System.out.println("");
 
             guessp1 = p1.number;
-            System.out.println("Player one guessed " + guessp1); //receive players' guesses; access number var of each player
+            System.out.println("GuessGame.Player one guessed " + guessp1); //receive players' guesses; access number var of each player
 
             guessp2 = p2.number;
-            System.out.println("Player two guessed " + guessp2);
+            System.out.println("GuessGame.Player two guessed " + guessp2);
 
             guessp3 = p3.number;
-            System.out.println("Player three guess " + guessp3);
+            System.out.println("GuessGame.Player three guess " + guessp3);
 
             if (guessp1 == targetNumber) {
                 p1isRight = true; //toggles boolean var to hold true to player's guess
@@ -61,9 +61,9 @@ public class GuessGame { // GuessGame with three objects/instances for three Pla
 
                 System.out.println("");
                 System.out.println("We have a winner!");
-                System.out.println("Player one got it right? " + p1isRight);
-                System.out.println("Player two got it right? " + p2isRight);
-                System.out.println("Player three got it right? " + p3isRight);
+                System.out.println("GuessGame.Player one got it right? " + p1isRight);
+                System.out.println("GuessGame.Player two got it right? " + p2isRight);
+                System.out.println("GuessGame.Player three got it right? " + p3isRight);
                 System.out.println("");
                 System.out.println("//////// GAME OVER ////////");
                 break; //game done; get out of loop
